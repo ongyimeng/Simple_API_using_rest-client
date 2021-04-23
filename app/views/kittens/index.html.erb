@@ -1,0 +1,11 @@
+<h1>All Kittens</h1>
+
+<% @kittens.each do |kitten| %>
+    <div>
+        <p><%= kitten.name%><p>
+        <%= button_to "Delete", kitten_path(kitten), method: :delete %>
+        <%= button_to "Edit", edit_kitten_path(kitten), method: :delete %>
+    </div>
+<% end %>
+
+<%= button_to "Create", new_kitten_path, method: :get %>

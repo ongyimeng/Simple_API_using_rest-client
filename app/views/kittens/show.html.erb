@@ -1,0 +1,11 @@
+<h1><%= @kitten.name %></h1>
+
+<p>Age<p>
+<p><%= @kitten.age %><p>
+<p>Cuteness<p>
+<p><%= @kitten.cuteness %><p>
+<p>Softness<p>
+<p><%= @kitten.softness %><p>
+
+<%= button_to "Delete", kitten_path(@kitten), method: :delete %>
+<%= button_to "Homepage", root_path, method: :get %>
